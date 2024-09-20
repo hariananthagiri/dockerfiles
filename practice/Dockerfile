@@ -1,8 +1,9 @@
 FROM almalinux:8
 RUN yum install nginx -y
 CMD ["nginx","-g","daemon off;"]
-WORKDIR /tmp
-RUN echo "hari KRISHNA" > file.txt
+USER harikrishna
+# WORKDIR /tmp
+# RUN echo "hari KRISHNA" > file.txt
 # ENV NAME="HARI"
 # ADD https://raw.githubusercontent.com/daws-76s/notes/master/session-01.txt /tmp/
 # RUN rm -rf /usr/share/nginx/html/index.html
