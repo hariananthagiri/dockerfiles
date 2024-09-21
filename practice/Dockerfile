@@ -1,7 +1,10 @@
 FROM almalinux:8
-ARG username
-RUN adduser $username
-USER $username
+# ARG username
+# RUN adduser $username
+# USER $username
+ARG COURSE
+ENV COURSE=${COURSE}
+RUN echo "COURSE:${COURSE}"
 CMD ["ping", "google.com"]
 # ENTRYPOINT ["ping", "google.com"]
 # RUN yum install nginx -y
