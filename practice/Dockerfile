@@ -1,5 +1,5 @@
 FROM almalinux:8
-RUN add user hari
+RUN adduser hari
 USER hari
 # CMD ["ping", "google.com"]
 # ENTRYPOINT ["ping", "google.com"]
