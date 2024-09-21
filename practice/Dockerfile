@@ -1,9 +1,9 @@
 FROM almalinux:8
+RUN add user hari
+USER hari
 # CMD ["ping", "google.com"]
-ENTRYPOINT ["ping", "google.com"]
+# ENTRYPOINT ["ping", "google.com"]
 # RUN yum install nginx -y
-# RUN add user hari
-# USER hari
 # WORKDIR /tmp
 # RUN echo "hari KRISHNA" > file.txt
 # ENV username="hari"
