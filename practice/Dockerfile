@@ -1,6 +1,6 @@
 FROM almalinux:8
-CMD ["ping", "google.com"]
-# ENTRYPOINT ["ping" "google.com"]
+# CMD ["ping", "google.com"]
+ENTRYPOINT ["ping" "google.com"]
 # RUN yum install nginx -y
 # RUN add user hari
 # USER hari
