@@ -1,6 +1,7 @@
 FROM almalinux:8
-RUN adduser hari
-USER hari
+ARG username
+RUN adduser $username
+USER $username
 CMD ["ping", "google.com"]
 # ENTRYPOINT ["ping", "google.com"]
 # RUN yum install nginx -y
