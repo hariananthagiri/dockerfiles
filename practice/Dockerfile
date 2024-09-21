@@ -1,11 +1,12 @@
-FROM almalinux:8
+ARG version
+FROM almalinux:${version}
+CMD ["ping", "google.com"]
 # ARG username
 # RUN adduser $username
 # USER $username
-ARG COURSE
-ENV COURSE=${COURSE}
-RUN echo "COURSE:${COURSE}"
-CMD ["ping", "google.com"]
+# ARG COURSE
+# ENV COURSE=${COURSE}
+# RUN echo "COURSE:${COURSE}"
 # ENTRYPOINT ["ping", "google.com"]
 # RUN yum install nginx -y
 # WORKDIR /tmp
